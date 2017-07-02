@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="d4e98dc1-5f1f-43a9-913f-9f7f6e46c91d" activeEnvironment="Default" name="PerficientJira-Services" resourceRoot="" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="6eafe64e-8390-4bed-a95f-9a871ca7a98f" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://gdcsa02.perficient.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://gdcsa02.perficient.com</con:endpoint></con:endpoints><con:resource name="Session" path="/rest/auth/1/session" id="7d538df0-a866-42ea-bbfb-ee3a9bd10334"><con:settings/><con:parameters/><con:method name="Session 1" id="802f826a-3543-4737-94ca-f51600c5d045" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>401 400 403</con:status><con:params/><con:element xmlns:ses="http://gdcsa02.perficient.com/rest/auth/1/session">ses:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ses="http://gdcsa02.perficient.com/rest/auth/1/session">ses:Response</con:element></con:representation><con:request name="Request 1" id="69877394-ca7c-42ed-9acb-0c3819eca110" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://gdcsa02.perficient.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="1ec54782-01f1-4a3a-b6ef-34b54695f8e2" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://gdcsa02.perficient.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://gdcsa02.perficient.com</con:endpoint></con:endpoints><con:resource name="Issue" path="/rest/api/2/issue" id="8c613e95-9918-47ca-a6e9-7eed138bc5fb"><con:settings/><con:parameters/><con:method name="Issue 1" id="bc147a1b-077c-4ef0-b7e9-98cc093d3449" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>400 403</con:status><con:params/><con:element xmlns:iss="http://gdcsa02.perficient.com/rest/api/2/issue">iss:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html;charset=UTF-8</con:mediaType><con:status>401</con:status><con:params/></con:representation><con:request name="Request 1" id="7cebf713-d77c-457f-8b91-8ff56486d61c" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://gdcsa02.perficient.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="6f5ee894-15b2-427c-9e09-7f4f4afc120b" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://gdcsa02.perficient.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://gdcsa02.perficient.com</con:endpoint></con:endpoints><con:resource name="Search" path="/rest/api/2/search" id="33f52988-5b8d-4fe6-a95c-6c8c75daea4d"><con:settings/><con:parameters/><con:method name="Search 1" id="69f47cd8-fc8b-423b-ae2b-6323cdeeb4c8" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:sear="http://gdcsa02.perficient.com/rest/api/2/search">sear:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html;charset=UTF-8</con:mediaType><con:status>401</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:sear="http://gdcsa02.perficient.com/rest/api/2/search">sear:Response</con:element></con:representation><con:request name="Request 1" id="f182bdda-f1e4-4c23-96e9-0136b8117ec4" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://gdcsa02.perficient.com</con:endpoint><con:request/><con:originalUri>http://gdcsa02.perficient.com/rest/api/2/search</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="285ec8e9-c6c3-464f-bc3c-dceee1a6de38" name="SearchIssue"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="24959ac7-4f60-49dd-bd5a-e41b7e6f2c61" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Login" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="228152d2-caaa-41f6-868c-791744e2f988" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CreateNewIssue" searchProperties="true" disabled="true"><con:settings/><con:testStep type="restrequest" name="CreateIssue" id="e4a71066-3241-4dc8-917d-19acfc581e25"><con:settings/><con:config service="http://gdcsa02.perficient.com" methodName="Issue 1" resourcePath="/rest/api/2/issue" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateIssue" id="eacb4a20-30ea-499c-9fce-882e12c3c880" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Cookie" value=" ${#Project#Session}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://gdcsa02.perficient.com</con:endpoint><con:request>{
+    "fields": {
+        "project": {
+            "id": "${#TestSuite#ProjectId}"
+        },
+        "issuetype": {
+            "id": "${#TestSuite#issuetypeid}"
+        }
+       
+    }
+}</con:request><con:originalUri>http://gdcsa02.perficient.com/rest/api/2/issue</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>ProjectId</con:name><con:value>10000</con:value></con:property><con:property><con:name>issuetypeid</con:name><con:value>3</con:value></con:property><con:property><con:name>Summary</con:name><con:value>WebService API Testing</con:value></con:property><con:property><con:name>priorityid</con:name><con:value>4</con:value></con:property><con:property><con:name>environment</con:name><con:value>auto</con:value></con:property><con:property><con:name>description</con:name><con:value>for testing</con:value></con:property><con:property><con:name>originEstimate</con:name><con:value>10</con:value></con:property><con:property><con:name>remainEstimate</con:name><con:value>5</con:value></con:property><con:property><con:name>labels</con:name><con:value>auto</con:value></con:property></con:properties></con:testCase><con:testCase id="7500bc44-6340-4882-aec9-266d53b4a813" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="SearchIssue" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Prepare" id="7552628e-f1f6-4d4e-a7f2-be5a27f55952"><con:settings/><con:config><script>
+
+//TestCaseRunner.runTestStepByName("Login")
+//def STime = TestCaseRunner.getStartTime()
+//log.info(STime)
+
+
+testRunner.runTestStepByName("Login")
+ def getPropValue = context.testCase.getPropertyValue("Session")
+log.info("First One---" + getPropValue)
+
+//testRunner.runTestStepByName("Search15Issues")
+
+//JSESSIONID=
+//testRunner.testCase.testSuite.project.setPropertyValue("Session",JSESSIONID)
+//testRuner.run['Login']
+
+//log.info(messageExchange.responseContent)
+//log.info(messageExchange.responseHeaders["Content-Type"])
+//assert messageExchange.responseHeaders["Content-Type"]=="application/json;charset=UTF-8"; 
+String testString = "Test String"
+testRunner.testCase.setPropertyValue("Pro_Response", testString)
+def getLocalPropValue = testRunner.testCase.getPropertyValue("Pro_Response")
+log.info(getLocalPropValue)
+testRunner.testCase.setPropertyValue("Session", "aaaa")
+def session = testRunner.testCase.getPropertyValue("Session")
+log.info(session)
+log.info(testRunner.testCase.testSuite.project.getPropertyValue("Session"))
+
+//def response = context.expand( ‘${ServiceRequest#Response}’ )</script></con:config></con:testStep><con:testStep type="groovy" name="setProperty_Session" id="91362118-d114-4ed4-bfa3-bad068c61eca"><con:settings/><con:config><script>// Get Response data from the service
+//testRunner.runTestStepByName("Login")
+import groovy.json.JsonSlurper
+
+
+testRunner.runTestStepByName("Login")
+
+def response = context.expand('${Login#Response}')
+def slurper = new JsonSlurper()
+def information = slurper.parseText(response)
+
+//set project property Sesstion as latest session ID
+def Session=information["session"]["name"] + "=" +information["session"]["value"]
+testRunner.testCase.testSuite.project.setPropertyValue("Session", Session)
+
+log.info(Session)
+
+//def parsedResponse = new JsonSlurper().parseText(response)
+//String convertedValue = parsedResponse.Body.ConversionRateResponse.
+//ConversionRateResult.text()
+//log.info(convertedValue)
+
+//log.info(response)
+/*
+def parsedResponse = new XmlSlurper().parseText(response)
+String convertedValue = parsedResponse.Body.ConversionRateResponse.
+ConversionRateResult.text()
+log.info(convertedValue)
+*/
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="getProperty_runSearchIssue" id="60dd690e-64e2-42c1-adac-460e25a960a1"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+
+
+//testRunner.runTestStepByName("Search15Issues")
+def response = context.expand('${Search15Issues#Response}')
+
+//log.info(response)
+
+def slurper = new JsonSlurper()
+def information = slurper.parseText(response)
+
+log.info(information)
+
+def issues = information["issues"]
+log.info(issues)
+def keys = issues["key"]
+log.info(keys)
+
+//Create an new property
+//testRunner.testCase.testSuite.addProperty('key_number')
+testRunner.testCase.testSuite.setPropertyValue("key_number", keys[1])
+
+</script></con:config></con:testStep><con:testStep type="restrequest" name="Login" id="6abab96a-d2a7-4f3e-b75c-82d7383c8859" disabled="true"><con:settings/><con:config service="http://gdcsa02.perficient.com" methodName="Session 1" resourcePath="/rest/auth/1/session" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Login" id="1a7b8be2-bde3-4053-b203-b3ae588471e5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://gdcsa02.perficient.com</con:endpoint><con:request>{
+	"username":"${#TestSuite#Username}",
+	"password":"${#TestSuite#Password}"
+}</con:request><con:originalUri>http://gdcsa02.perficient.com/rest/auth/1/session</con:originalUri><con:assertion type="Simple Contains" id="f5200652-c118-42fb-b264-2d957fd0c978" name="Contains"><con:configuration><token>JSESSIONID</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="ed72050c-0ce7-4617-9649-db9565ed013f" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+
+def response=messageExchange.getResponseContent()
+log.info(response)
+def slurper=new JsonSlurper()
+def re=slurper.parseText(response)
+def SessionID= re.session.value
+try{
+	assert SessionID !=null
+	}
+catch(Exception e)
+{log.info("Failed to login project")}
+
+//Session = "JSESSIONID=" + SessionID
+//Save token:
+
+import groovy.json.JsonSlurper
+import groovy.json.JsonOutput
+import com.eviware.soapui.support.types.StringToStringsMap 
+
+//def responseHeader = testRunner.testCase.testSteps["Login"].testRequest.response.getResponseHeaders() 
+//def cookie=responseHeader."Set-Cookie"
+//def sessionID=cookie[1].split(";")
+//testRunner.testCase.testSuite.project.setPropertyValue("Session",sessionID[0])
+//testRunner.testCase.testSuite.project.setPropertyValue( "Session",  "'JSESSIONID=' + SessionID")
+assert messageExchange.responseHeaders["Content-Type"]=="application/json;charset=UTF-8"; 
+log.info(messageExchange.responseHeaders["Content-Type"])</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Search15Issues" id="f3c04464-d078-47e1-9f5c-0845d9fb02ae" disabled="true"><con:settings/><con:config service="http://gdcsa02.perficient.com" methodName="Search 1" resourcePath="/rest/api/2/search" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Search15Issues" id="8058b135-bb21-4fe0-9ae0-73c8e3ef7c17" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Cookie" value="${#Project#Session}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://gdcsa02.perficient.com</con:endpoint><con:request>{
+    "jql": "project=GDCTES",
+    "startAt": 0,
+    "maxResults": 15,
+    "fields": [
+        "summary",
+        "status",
+        "assignee"
+    ]
+}
+
+
+</con:request><con:originalUri>http://gdcsa02.perficient.com/rest/api/2/search</con:originalUri><con:assertion type="Simple Contains" id="f59185ec-f412-4ea3-bdc1-e8ab1b672574" name="Contains"><con:configuration><token>issues</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="ea3a4e4a-cedc-4122-86be-9473ee0c3cd1" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="449edbbc-8039-412b-bb13-22060cf1097b" name="JsonPath Match"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" id="672937c1-6593-4108-8422-4cd8192087a6" name="Script Assertion"><con:configuration/></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="properties" name="Properties" id="bf7d9c82-8afb-4c4b-b3f5-60a1a23a7c47"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Pro_Response</con:name><con:value>Nothing</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer" id="281bf711-1fac-46b1-a1c9-675a980e7209"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/></con:testStep><con:properties><con:property><con:name>Pro_Response</con:name><con:value>Test String</con:value></con:property><con:property><con:name>Session</con:name><con:value>aaaa</con:value></con:property><con:property><con:name>key_number</con:name></con:property><con:property><con:name>key_number</con:name></con:property><con:property><con:name>key_number</con:name></con:property><con:property><con:name>key_number</con:name><con:value>GDCTES-15211</con:value></con:property></con:properties></con:testCase><con:testCase id="2a5a1e3e-1132-4b28-8fdb-d66df412394b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="SearchByKey" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="SearchByProject_Key" id="1a583ff0-69c4-4db9-8d76-47e77905d9db"><con:settings/><con:config service="http://gdcsa02.perficient.com" methodName="Search 1" resourcePath="/rest/api/2/search" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="SearchByProject_Key" id="612983d7-dda2-416b-94d7-924e70c08aa3" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Cookie" value="${#Project#Session}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://gdcsa02.perficient.com</con:endpoint><con:request>{
+		"jdl": "key=GDCTES-15211"
+		 "fields": [
+        		"summary",
+        		"status",
+        		"assignee"
+    ]	
+	
+}</con:request><con:originalUri>http://gdcsa02.perficient.com/rest/api/2/search</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="98e14389-1e72-48f3-8141-62dc6e2e626c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="updateIssueSummary" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:properties><con:property><con:name>Username</con:name><con:value>perficient</con:value></con:property><con:property><con:name>Password</con:name><con:value>perficient</con:value></con:property><con:property><con:name>ProjectId</con:name><con:value>10000</con:value></con:property><con:property><con:name>issuetypeid</con:name><con:value>3</con:value></con:property><con:property><con:name>Summary</con:name><con:value>WebService API Testing</con:value></con:property><con:property><con:name>priorityid</con:name><con:value>4</con:value></con:property><con:property><con:name>environment</con:name><con:value>auto</con:value></con:property><con:property><con:name>description</con:name><con:value>for testing</con:value></con:property><con:property><con:name>originEstimate</con:name><con:value>10</con:value></con:property><con:property><con:name>remainEstimate</con:name><con:value>5</con:value></con:property><con:property><con:name>labels</con:name><con:value>auto</con:value></con:property><con:property><con:name>key_number</con:name></con:property><con:property><con:name>key_number</con:name></con:property><con:property><con:name>key_number</con:name><con:value>GDCTES-15211</con:value></con:property></con:properties></con:testSuite><con:properties><con:property><con:name>Session</con:name><con:value>JSESSIONID=5BA7576A9DCC243B09123F79AC93E745</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
